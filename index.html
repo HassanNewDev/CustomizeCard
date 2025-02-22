@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customize Your Card</h1>
+    <div class="customization">
+      <label for="frontText">Front of Card:</label>
+      <input type="text" id="frontText" placeholder="Enter text for the front">
+      
+      <label for="insideText">Inside of Card:</label>
+      <textarea id="insideText" placeholder="Enter message for inside the card"></textarea>
+      
+      <button onclick="updateCard()">Update Card</button>
+      <button onclick="saveCard()">Save Card as Image</button>
+    </div>
+
+    <div class="card" id="card">
+      <div class="card-front" id="cardFront">
+        <p id="frontDisplay">Front Text</p>
+      </div>
+      <div class="card-inside" id="cardInside">
+        <p id="insideDisplay">Inside Message</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
